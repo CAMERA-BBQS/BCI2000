@@ -59,15 +59,15 @@ For more information, please visit [BCI2000 Watchdog](https://www.bci2000.org/me
 
 2. Set up batch files
    ├─ Load predefined parameter files for neural, audio, video, and subject-specific settings
-   ├─  Register IP address
+   ├─ Register research PC (where BCI2000 being launched) IP address
    └─ Register custom events for EMA sessions, questionnaires, and behavioral tracking
 
 3. Prepare cameras and microphones
 
 4. Prepare neural hardware (Natus)
    ├─ Start the EEG study on the Natus PC
-   ├─ Connect the recording PC to the Natus PC via Ethernet
-   ├─ Configure IP settings on the Natus PC
+   ├─ Connect the research PC to the Natus PC via Ethernet
+   ├─ Configure IP settings on the research PC (register Natus PC IP address in SDK)
    └─ Start the XLDataExport client
 
 5. Prepare IPad
