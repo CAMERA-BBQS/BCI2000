@@ -1,6 +1,6 @@
 # BCI2000
 ## Introduction:
-Our platform is built on top of BCI2000, a modular real-time system for multi-modal acquisition and experimental control. In our setup, BCI2000 is used specifically as a synchronization backbone to provide a unified time base across multiple data streams, including (intracranial) neural recordings, video, audio, and a custom [Python-based script](https://github.com/CAMERA-BBQS/PyUnityLink), that communicates with our Ecological Momentary Assessment (EMA). We leverage BCI2000’s real-time signal streaming and event-marker infrastructure to ensure precise temporal alignment across modalities, while all task logic and downstream analyses are implemented in custom components outside of BCI2000. For more information, please visit: [BCI2000](https://www.bci2000.org).
+Our platform is built on top of BCI2000, a modular real-time system for multi-modal acquisition and experimental control. In our setup, BCI2000 is used specifically as a synchronization platform to provide a unified time base across multiple data streams, including neural recordings, video, audio, and a custom [Python-based script](https://github.com/CAMERA-BBQS/PyUnityLink), that communicates with our Ecological Momentary Assessment (EMA). We leverage BCI2000’s real-time signal streaming and event-marker infrastructure to ensure precise temporal alignment across modalities, while all task logic and downstream analyses are implemented in custom components outside of BCI2000. For more information, please visit: [BCI2000](https://www.bci2000.org).
 
 
 
@@ -36,7 +36,7 @@ A BCI2000 Parameter files store customized parameters, including subject name, s
 Audio and video are recorded using standard USB connceted microphones and cameras. 
 
 ### Neural Signals (Natus)
-NewYork-Presbyterian / Columbia University Irving Medical Center uses the [Natus](https://natus.com/) system as its primary clinical neurology recording platform. To record neural signals from Natus system, BCI2000 provides a Natus SDK that you stream ongoing EEG studies into BCI2000. A very detailed instruction can be found [here](https://www.bci2000.org/mediawiki/index.php/Contributions:NatusADC).
+NewYork-Presbyterian / Columbia University Irving Medical Center uses the [Natus](https://natus.com/) system as its primary clinical neurology recording platform. To record neural signals from Natus system, BCI2000 provides a Natus SDK that you stream ongoing EEG studies into BCI2000. A detailed instruction can be found [here](https://www.bci2000.org/mediawiki/index.php/Contributions:NatusADC).
 
 "A project named XLDataExportClient reads signals from the device and calls the NatusDataServer's functions to send the signal to the client."
 
