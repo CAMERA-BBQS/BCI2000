@@ -21,7 +21,10 @@ This repository contains example batch files used to initialize and configure th
 - [Compile BCI2000](https://www.bci2000.org/mediawiki/index.php/Programming_Howto:Compile_BCI2000)
 
 
+## BCI2000 Batch Files
+A BCI2000 batch file is a startup script that automatically launches the required BCI2000 modules with the correct configuration parameters.
 
+## Neural Signals
 Natus SDK: https://www.bci2000.org/mediawiki/index.php/Contributions:NatusADC
 
 ## Usage
