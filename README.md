@@ -20,12 +20,25 @@ This repository contains example batch files used to initialize and configure th
     - EXTENSIONS_WEBCAMLOGGER2
 - [Compile BCI2000](https://www.bci2000.org/mediawiki/index.php/Programming_Howto:Compile_BCI2000)
 
+## Hardware Requirements
+One can find our hardware setup from CAMERA Platform [homepage](https://github.com/CAMERA-BBQS/CAMERA-Platform_Overview).
 
-## BCI2000 Batch Files
+## Startup and Configuration
+### BCI2000 Batch Files
 A BCI2000 batch file is a startup script that automatically launches the required BCI2000 modules with the correct configuration parameters.
 
-## Neural Signals
+### BCI2000 Parameter Files
+
+## Data Source
+### Audio & Video
+Audio and video are recorded using standard USB connceted microphones and cameras. 
+### Neural Signals (Natus)
+NewYork-Presbyterian / Columbia University Irving Medical Center uses Natus as main neurology system. 
 Natus SDK: https://www.bci2000.org/mediawiki/index.php/Contributions:NatusADC
+
+
+## Additional Support
+### BCI2000 Watchdog
 
 ## Usage
 The batch file initializes and configures BCI2000 program.
