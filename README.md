@@ -1,10 +1,13 @@
 # BCI2000
 ## Introduction:
-Our platform is built on top of BCI2000, a modular real-time system for multi-modal acquisition and experimental control. In our setup, BCI2000 is used specifically as a synchronization platform to provide a unified time base across multiple data streams, including neural recordings, video, audio, and a custom [Python-based script](https://github.com/CAMERA-BBQS/PyUnityLink), that communicates with our Ecological Momentary Assessment (EMA). We leverage BCI2000’s real-time signal streaming and event-marker infrastructure to ensure precise temporal alignment across modalities, while all task logic and downstream analyses are implemented in custom components outside of BCI2000. For more information, please visit: [BCI2000](https://www.bci2000.org).
+Our platform is built on top of BCI2000, a modular real-time system for multi-modal acquisition and experimental control. In our setup, BCI2000 is used specifically as a synchronization platform to provide a unified time base across multiple data streams, including neural recordings, video, audio, and [PyUnityLink](https://github.com/CAMERA-BBQS/PyUnityLink), a custom Python-based control hub, that communicates with our Ecological Momentary Assessment (EMA). We leverage BCI2000’s real-time signal streaming and event-marker infrastructure to ensure precise temporal alignment across modalities, while all task logic and downstream analyses are implemented in custom components outside of BCI2000. 
 
-
+For more information, please visit: [BCI2000](https://www.bci2000.org).
 
 This repository contains example batch files used to initialize and configure the BCI2000 program, with parameter files customized for CAMERA project.
+
+This repository is part of the CAMERA Platform.
+See the main guide here: [CAMERA-Platform_Overview](https://github.com/CAMERA-BBQS/CAMERA-Platform_Overview)
 
 
 ## Installation
