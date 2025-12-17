@@ -53,9 +53,9 @@ For more information, please visit [BCI2000 Watchdog](https://www.bci2000.org/me
 ## Typical Workflow
 ```text
 1. Set up parameter files
-   ├─ Configure camera parameters
-   ├─ Configure microphone parameters
-   └─ Set sampling frequency, data block size, and participant ID
+   ├─ Configure camera parameters (microphone.prm)
+   ├─ Configure microphone parameters (multiwebcam.prm)
+   └─ Set sampling frequency, data block size, and participant ID (subject_file_sr.prm)
 
 2. Set up batch files
    ├─ Load predefined parameter files for neural, audio, video, and subject-specific settings
