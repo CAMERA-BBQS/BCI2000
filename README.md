@@ -59,7 +59,7 @@ Setup Steps:
 Review and modify parameters in each parameter file.
 Launch XLDataExportSrv.exe (Natus SDK)
 Excute the batch file (run it through BCI2000 watchdog if monitoring is requrired)
-
+```text
 1. Setup batch file
    └─ Configure startup and synchronization settings
 
@@ -77,7 +77,7 @@ Excute the batch file (run it through BCI2000 watchdog if monitoring is requrire
 
 5. Run Python script
    └─ Schedule and manage EMA sessions
-
+```
 
 ## Contributors
 Hongkun Zhu\
