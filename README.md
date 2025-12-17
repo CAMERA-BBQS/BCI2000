@@ -46,7 +46,7 @@ A Python-based central orchestration service that coordinates control signals an
 
 ## Additional Support
 ### BCI2000 Watchdog
-The purpose of the Watchdog is to ensure reliable long-duration recordings. During extended monitoring sessions, unexpected interruptions may occur—for example, transient system dropouts or routine EEG maintenance that temporarily interrupts the neural data source. The Watchdog monitors the acquisition process and automatically restarts the system when such interruptions are detected, allowing neural signal acquisition to resume without manual intervention.
+During extended monitoring sessions, unexpected interruptions may occur, such as transient neural recording dropouts or device freezes. The BCI2000 Watchdog monitors the acquisition process and automatically restarts the system upon detecting these interruptions, allowing recording to resume without frequent manual intervention. You may modify the monitored parametesr as needed.
 
 For more information, please visit [BCI2000 Watchdog](https://www.bci2000.org/mediawiki/index.php/User_Reference:BCI2000Watchdog)
 
