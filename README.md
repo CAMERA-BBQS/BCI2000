@@ -50,7 +50,7 @@ The purpose of the Watchdog is to ensure reliable long-duration recordings. Duri
 
 For more information, please visit [BCI2000 Watchdog](https://www.bci2000.org/mediawiki/index.php/User_Reference:BCI2000Watchdog)
 
-## Typical Usage/Workflow
+## Typical Workflow
 ```text
 1. Set up parameter files
    ├─ Configure camera parameters
