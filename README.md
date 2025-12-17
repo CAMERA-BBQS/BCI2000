@@ -61,26 +61,29 @@ Launch XLDataExportSrv.exe (Natus SDK)
 Excute the batch file (run it through BCI2000 watchdog if monitoring is requrired)
 
 ```mermaid
-flowchart TD
-    %% Major steps (left column)
-    A[1. Setup batch file]
-    B[2. Setup parameter files]
-    C[3. Prepare Natus hardware]
-    D[4. Start acquisition]
-    E[5. Run Python EMA scheduler]
+flowchart LR
+    %% Left column: major steps
+    subgraph LEFT[""]
+        direction TB
+        A[1. Setup batch file]
+        B[2. Setup parameter files]
+        C[3. Prepare Natus hardware]
+        D[4. Start acquisition]
+        E[5. Run Python EMA scheduler]
+    end
 
-    %% Explanations (right column)
-    A1[Configure startup and synchronization settings]
-    B1[Define data streams and recording parameters]
-    C1[Start system, verify stream, confirm channels]
-    D1[Launch via batch file or Watchdog]
-    E1[Schedule and manage EMA sessions]
+    %% Right column: explanations
+    subgraph RIGHT[""]
+        direction TB
+        A1[Configure startup and synchronization]
+        B1[Define data streams and parameters]
+        C1[Start system, verify stream, confirm channels]
+        D1[Launch via batch file or Watchdog]
+        E1[Schedule and manage EMA sessions]
+    end
 
-    %% Vertical flow of major steps
-    A --> B
-    B --> C
-    C --> D
-    D --> E
+    %% Vertical flow (explicit)
+    A --> B --> C --> D --> E
 
     %% Horizontal explanations
     A --> A1
@@ -88,6 +91,12 @@ flowchart TD
     C --> C1
     D --> D1
     E --> E1
+
+    %% Invisible links to enforce row alignment
+    A -.-> B1
+    B -.-> C1
+    C -.-> D1
+    D -.-> E1
 
 ```
 
