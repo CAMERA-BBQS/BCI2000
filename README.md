@@ -83,8 +83,6 @@ flowchart TD
     F --> G
 
     G --> H[Schedule and manage EMA sessions]
-
-
 ```
 
 
