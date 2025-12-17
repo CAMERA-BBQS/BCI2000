@@ -13,6 +13,11 @@ This repository contains example batch files used to initialize and configure th
 - [Register with BCI2000 Project](https://www.bci2000.org/mediawiki/index.php/Programming_Howto:Register_with_BCI2000_Project)
 - [Download the BCI2000 Sourcecode](https://www.bci2000.org/mediawiki/index.php/Programming_Howto:Download_the_BCI2000_Sourcecode)
 - [Configure BCI200 for Compilation](https://www.bci2000.org/mediawiki/index.php/Programming_Howto:Configure_BCI2000_for_Compilation)
+  - For CAMERA, we need to include:
+    - BUILD_ALL_SOURCEMODULES
+    - BUILD_PRIVATE-SOURCEMODULES
+    - EXTENTIONS_AUDIOEXTENSION
+    - EXTENSIONS_WEBCAMLOGGER2
 - [Compile BCI2000](https://www.bci2000.org/mediawiki/index.php/Programming_Howto:Compile_BCI2000)
 
 
