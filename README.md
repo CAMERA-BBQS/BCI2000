@@ -32,8 +32,10 @@ A BCI2000 batch file is a startup script that automatically launches the require
 ## Data Source
 ### Audio & Video
 Audio and video are recorded using standard USB connceted microphones and cameras. 
+
 ### Neural Signals (Natus)
-NewYork-Presbyterian / Columbia University Irving Medical Center uses Natus as main neurology system. 
+NewYork-Presbyterian / Columbia University Irving Medical Center uses the Natus system as its primary clinical neurology recording platform.
+
 Natus SDK: https://www.bci2000.org/mediawiki/index.php/Contributions:NatusADC
 
 
