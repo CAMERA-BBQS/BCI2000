@@ -73,13 +73,14 @@ flowchart TD
     F --> H[Data Sources]
     G --> H
 
-    H --> I[Audio / Video<br/>(USB devices)]
-    H --> J[Neural Data<br/>(Natus – detailed)]
+    H --> I[Audio / Video (USB devices)]
+    H --> J[Neural Data (Natus – detailed)]
 
     I --> K[Typical Workflow]
     J --> K
 
     K --> L[Outputs]
+
 
 
 ## Contributors
