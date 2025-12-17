@@ -60,40 +60,23 @@ Review and modify parameters in each parameter file.
 Launch XLDataExportSrv.exe (Natus SDK)
 Excute the batch file (run it through BCI2000 watchdog if monitoring is requrired)
 
-```mermaid
-flowchart LR
-    %% Left column: major steps
-    subgraph LEFT
-      direction TB
-      A[1. Setup batch file]
-      B[2. Setup parameter files]
-      C[3. Prepare Natus hardware]
-      D[4. Start acquisition]
-      E[5. Run Python EMA scheduler]
-    end
+1. Setup batch file
+   └─ Configure startup and synchronization settings
 
-    %% Right column: explanations
-    subgraph RIGHT
-      direction TB
-      A1[Configure startup and synchronization]
-      B1[Define data streams and parameters]
-      C1[Start system, verify stream, confirm channels]
-      D1[Launch via batch file or Watchdog]
-      E1[Schedule and manage EMA sessions]
-    end
+2. Setup parameter files
+   └─ Define data streams and recording parameters
 
-    %% Vertical flow (major steps)
-    A --> B --> C --> D --> E
+3. Prepare neural hardware (Natus)
+   ├─ Start Natus system
+   ├─ Verify data streaming
+   └─ Confirm channel configuration
 
-    %% Horizontal links to explanations
-    A --> A1
-    B --> B1
-    C --> C1
-    D --> D1
-    E --> E1
+4. Start acquisition
+   ├─ Launch batch file
+   └─ Launch via Watchdog
 
-
-```
+5. Run Python script
+   └─ Schedule and manage EMA sessions
 
 
 ## Contributors
