@@ -20,12 +20,8 @@ Excute the batch file (run it through BCI2000 watchdog if monitoring is requrire
 
 ## Contributors
 Hongkun Zhu\
-Kun Zhao
-
-Francis Li
-
-James Swift
-
-Peter Brunner
-
+Kun Zhao\
+Francis Li\
+James Swift\
+Peter Brunner\
 Jürgen Mellinger
