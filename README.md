@@ -1,5 +1,9 @@
 # BCI2000
 
+This repository contains example batch files used to initialize and configure BCI2000 program, with the parameter files customized for and used in CAMERA project.
+
+
+
 ## Installation
 BCI2000:
 
@@ -7,7 +11,9 @@ Natus SDK: https://www.bci2000.org/mediawiki/index.php/Contributions:NatusADC
 
 ## Usage
 The batch file is used to initialize and configure BCI2000 program.
+
 Parameter files contain customized parameters such as setting the subject name, saved location, file splitting length etc.
 Parameters can also be modified and configured in BCI2000 GUI if preferred.
+
 
 ## Contributors
