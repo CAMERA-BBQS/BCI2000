@@ -62,27 +62,33 @@ Excute the batch file (run it through BCI2000 watchdog if monitoring is requrire
 
 ```mermaid
 flowchart TD
-    A[Setup batch file] --> A1[Configure startup and sync settings]
+    %% Major steps (left column)
+    A[1. Setup batch file]
+    B[2. Setup parameter files]
+    C[3. Prepare Natus hardware]
+    D[4. Start acquisition]
+    E[5. Run Python EMA scheduler]
 
-    A1 --> B[Setup parameter files]
-    B --> B1[Configure streams and recording options]
+    %% Explanations (right column)
+    A1[Configure startup and synchronization settings]
+    B1[Define data streams and recording parameters]
+    C1[Start system, verify stream, confirm channels]
+    D1[Launch via batch file or Watchdog]
+    E1[Schedule and manage EMA sessions]
 
-    B1 --> C[Prepare neural hardware - Natus]
-    C --> C1[Start Natus system]
-    C --> C2[Verify data streaming]
-    C --> C3[Confirm channel configuration]
+    %% Vertical flow of major steps
+    A --> B
+    B --> C
+    C --> D
+    D --> E
 
-    C1 --> D[Start recording session]
-    C2 --> D
-    C3 --> D
+    %% Horizontal explanations
+    A --> A1
+    B --> B1
+    C --> C1
+    D --> D1
+    E --> E1
 
-    D --> E[Launch using batch file]
-    D --> F[Launch using Watchdog]
-
-    E --> G[Run Python script]
-    F --> G
-
-    G --> H[Schedule and manage EMA sessions]
 ```
 
 
