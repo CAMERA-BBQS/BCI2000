@@ -36,7 +36,7 @@ A BCI2000 Parameter files store customized parameters, including subject name, s
 Audio and video are recorded using standard USB connceted microphones and cameras. 
 
 ### Neural Signals (Natus)
-NewYork-Presbyterian / Columbia University Irving Medical Center uses the [Natus](https://natus.com/) system as its primary clinical neurology recording platform. To record neural signals from Natus system, BCI2000 provides a Natus SDK that you stream ongoing EEG studies into BCI2000. A very detailed instruction can be found [here](https://www.bci2000.org/mediawiki/index.php/Contributions:NatusADC) 
+NewYork-Presbyterian / Columbia University Irving Medical Center uses the [Natus](https://natus.com/) system as its primary clinical neurology recording platform. To record neural signals from Natus system, BCI2000 provides a Natus SDK that you stream ongoing EEG studies into BCI2000. A very detailed instruction can be found [here](https://www.bci2000.org/mediawiki/index.php/Contributions:NatusADC).
 
 "A project named XLDataExportClient reads signals from the device and calls the NatusDataServer's functions to send the signal to the client."
 
@@ -44,6 +44,9 @@ NewYork-Presbyterian / Columbia University Irving Medical Center uses the [Natus
 
 ## Additional Support
 ### BCI2000 Watchdog
+The purpose of the Watchdog is to ensure reliable long-duration recordings. During extended monitoring sessions, unexpected interruptions may occur—for example, transient system dropouts or routine EEG maintenance that temporarily interrupts the neural data source. The Watchdog monitors the acquisition process and automatically restarts the system when such interruptions are detected, allowing neural signal acquisition to resume without manual intervention.
+
+For more information, please visit [BCI2000 Watchdog](https://www.bci2000.org/mediawiki/index.php/User_Reference:BCI2000Watchdog)
 
 ## Typical Usage/Workflow
 Open the BCI2000 batch file with corresponding parameter files to initialize and configure BCI2000 program.
