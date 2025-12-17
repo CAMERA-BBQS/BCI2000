@@ -19,3 +19,5 @@ Launch XLDataExportSrv.exe (Natus SDK)
 Excute the batch file (run it through BCI2000 watchdog if monitoring is requrired)
 
 ## Contributors
+Hongkun Zhu
+Kun Zhao
