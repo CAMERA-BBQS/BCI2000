@@ -40,6 +40,8 @@ NewYork-Presbyterian / Columbia University Irving Medical Center uses the [Natus
 
 "A project named XLDataExportClient reads signals from the device and calls the NatusDataServer's functions to send the signal to the client."
 
+### Python EMA Control Hub
+A Python-based central orchestration service that coordinates control signals and data flow between BCI2000 and an iPad Unity client. A detailed instruction for setting up the Python EMA Control Hub can be found [here](https://github.com/CAMERA-BBQS/PyUnityLink).
 
 
 ## Additional Support
