@@ -60,11 +60,15 @@ Review and modify parameters in each parameter file.
 Launch XLDataExportSrv.exe (Natus SDK)
 Excute the batch file (run it through BCI2000 watchdog if monitoring is requrired)
 ```text
-1. Setup batch file
+1. Setup parameter file
    └─ Configure startup and synchronization settings
 
-2. Setup parameter files
-   └─ Define data streams and recording parameters
+2. Setup batch files
+   └─ Initializes the BCI2000 environment and resets the system.
+   └─ Starts Natus neural data streaming with audio and webcam support.
+   └─ Starts Natus neural data streaming with audio and webcam support.
+   └─ Registers custom events for EMA sessions, questionnaires, and behavioral tracking.
+
 
 3. Prepare neural hardware (Natus)
    ├─ Start Natus system
