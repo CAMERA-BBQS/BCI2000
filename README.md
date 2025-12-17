@@ -36,10 +36,10 @@ A BCI2000 Parameter files store customized parameters, including subject name, s
 Audio and video are recorded using standard USB connceted microphones and cameras. 
 
 ### Neural Signals (Natus)
-NewYork-Presbyterian / Columbia University Irving Medical Center uses the [Natus](https://natus.com/) system as its primary clinical neurology recording platform.
+NewYork-Presbyterian / Columbia University Irving Medical Center uses the [Natus](https://natus.com/) system as its primary clinical neurology recording platform. To record neural signals from Natus system, BCI2000 provides a Natus SDK that you stream ongoing EEG studies into BCI2000. A very detailed instruction can be found [here]("https://www.bci2000.org/mediawiki/index.php/Contributions:NatusADC") 
 
-To record neural signals from Natus system, BCI2000 provides a Natus SDK that you stream ongoing EEG studies into BCI2000.
-A very detailed instruction can be found [here]("https://www.bci2000.org/mediawiki/index.php/Contributions:NatusADC") "A project named XLDataExportClient reads signals from the device and calls the NatusDataServer's functions to send the signal to the client."
+"A project named XLDataExportClient reads signals from the device and calls the NatusDataServer's functions to send the signal to the client."
+
 
 
 ## Additional Support
