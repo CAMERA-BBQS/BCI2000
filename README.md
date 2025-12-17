@@ -59,7 +59,8 @@ Setup Steps:
 Review and modify parameters in each parameter file.
 Launch XLDataExportSrv.exe (Natus SDK)
 Excute the batch file (run it through BCI2000 watchdog if monitoring is requrired)
-### 1
+
+```mermaid
 flowchart TD
     A[Overview] --> B[Requirements]
     B --> C[Installation]
