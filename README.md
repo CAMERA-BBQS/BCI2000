@@ -28,22 +28,25 @@ One can find our hardware setup from CAMERA Platform [homepage](https://github.c
 A BCI2000 batch file is a startup script that automatically launches the required BCI2000 modules with the correct configuration parameters.
 
 ### BCI2000 Parameter Files
+A BCI2000 Parameter files store customized parameters, including subject name, save location, file splitting length, microphone and camrera settings, etc. Alternatively, parameters can also be modified and configured via the BCI2000 GUI. Modify parameters as needed.
+
 
 ## Data Source
 ### Audio & Video
 Audio and video are recorded using standard USB connceted microphones and cameras. 
 
 ### Neural Signals (Natus)
-NewYork-Presbyterian / Columbia University Irving Medical Center uses the Natus system as its primary clinical neurology recording platform.
+NewYork-Presbyterian / Columbia University Irving Medical Center uses the [Natus](https://natus.com/) system as its primary clinical neurology recording platform.
 
-Natus SDK: https://www.bci2000.org/mediawiki/index.php/Contributions:NatusADC
+To record neural signals from Natus system, BCI2000 provides a Natus SDK that you stream ongoing EEG studies into BCI2000.
+A very detailed instruction can be found [here]"https://www.bci2000.org/mediawiki/index.php/Contributions:NatusADC"
 
 
 ## Additional Support
 ### BCI2000 Watchdog
 
-## Usage
-The batch file initializes and configures BCI2000 program.
+## Typical Usage/Workflow
+Open the BCI2000 batch file with corresponding parameter files to initialize and configure BCI2000 program.
 
 Parameter files store customized parameters, including subject name, save location, file splitting length, microphone and camrera settings, etc. Alternatively, parameters can also be modified and configured via the BCI2000 GUI. Modify parameters as needed.
 
