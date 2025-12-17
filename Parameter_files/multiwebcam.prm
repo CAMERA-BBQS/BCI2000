@@ -1,0 +1,11 @@
+Source:Webcam int LogWebcam= 1 0 0 1 // Allow logging from webcam (boolean)
+Source:Webcam int CameraNumber= 0 0 0 % // Camera index in case of a single webcam
+Source:Webcam int RecordAll= 1 0 0 1 // Record from all available webcams (boolean)
+Source:Webcam int StartIndex= 0 0 0 % // Camera index to start searching at
+Source:Webcam int EndIndex= 1 2 0 % // Camera index to stop searching at
+Source:Webcam int Decimation= 1 1 1 % // Save every nth frame
+Source:Webcam matrix WebcamFormat= 2 { camera%20index width height fps encoder%20profile } 0 1920 1080 30 1 1 1920 1080 30 1 // Desired resolution and fps for each webcam
+Source:Webcam matrix WebcamURL= 0 { camera%20index URL BufferingTime MaxBufferTime } // Source URL to use instead of physical webcam at given index
+Source:Webcam matrix AudioURL= 0 { camera%20index URL BufferingTime MaxBufferTime } // Audio URL to use for webcam at given index
+Source:Webcam int DateTimeLocation= 1 0 0 5 // Date/time text location in saved video:  0: none, 1: UpperRight, 2: UpperLeft, 3: LowerRight, 4: LowerLeft, 5: FrameCount  (enumeration)
+Source:Webcam int DisplayStream= 1 1 0 1 // Display camera data in a window (boolean)

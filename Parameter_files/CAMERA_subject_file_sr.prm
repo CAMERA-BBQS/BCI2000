@@ -1,0 +1,25 @@
+Storage:Data%20Location string DataDirectory= D:/data % % // path to top level data directory (directory)
+Storage:Session string SubjectName= CAM0xx Name % % // subject alias
+Storage:Session string SubjectSession= 001 001 % % // three-digit session number
+Storage:Session string SubjectRun= 00 00 % % // two-digit run number
+Storage:Documentation string ID_System= % // BCI2000 System Code
+Storage:Documentation string ID_Amp= % // BCI2000 Amp Code
+Storage:Documentation string ID_Montage= % // BCI2000 Cap Montage Code
+Storage:BCI2000FileWriter string FileFormat= dat // format of data file (readonly)
+Storage:Documentation string StorageTime= % // time of beginning of data storage
+Storage:FileSplitting string FileSplittingCondition= 01:00:00 // when to split files, e.g. "1:25:00" or "1.5GB"
+Storage:Data%20Location string DataFile= $%7bSubjectName%7d$%7bSubjectSession%7d/$%7bSubjectName%7dS$%7bSubjectSession%7dR$%7bSubjectRun%7d.$%7bFileFormat%7d // name of data file relative to DataDirectory
+
+Source:Signal%20Properties int SourceCh= auto // number of digitized and stored channels (allow_override)
+
+Source:Signal%20Properties int SampleBlockSize= 100 // number of samples transmitted at a time (allow_override, suggested values: scalp EEG:50, itracranial EEG: 100 )
+Source:Signal%20Properties int SamplingRate= auto // sampling rate (allow_override)
+
+Source:Signal%20Properties list ChannelNames= 1 auto // list of channel names (allow_override)
+Source:Signal%20Properties list SourceChOffset= 1 auto // Offset for channels in A/D units (allow_override)
+Source:Signal%20Properties list SourceChGain= 1 auto // gain for each channel (A/D units per physical unit) (allow_override)
+Source:Signal%20Properties list SourceChList= 1 auto // channel numbers to stream - space separated numbers - channel numbers start from 0
+Source:NatusServerSettings int ServerBlockSize= 50 1 % % // number of samples per block transmitted by the server application in each package 
+Source:NatusServerSettings int DecimationFactor= 1 1 % % // number of blocks to aggregate & decimate 
+Source:NatusServerSettings string ServerIP= auto auto 1 % // number of digitized and stored channels
+Source:NatusServerSettings string Port= auto auto 1 % // number of digitized and stored channels

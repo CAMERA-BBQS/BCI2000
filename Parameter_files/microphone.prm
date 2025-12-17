@@ -1,0 +1,11 @@
+Source:AudioExtension int EnableAudioExtension= 1 0 0 14 // Enable the AudioExtension with specific host API: 0: Disabled, 1: Disabled, 2: MME, 3: Disabled, 4: Disabled, 5: Disabled, 6: Disabled, 7: Disabled, 8: Disabled, 9: Disabled, 10: Disabled, 11: WDMKS, 12: Disabled, 13: WASAPI, 14: Disabled,  (enumeration)
+Source:AudioExtension int AudioInputDevice= -1 -1 -1 % // Device to use as input device (-1 = Default) 
+Source:AudioExtension int AudioOutputDevice= -1 -1 -1 % // Device to use as output device (-1 = Default) 
+Source:AudioExtension string AudioInputFile= % // Name of an input file to use (appended to input channels) (inputfile)
+Source:AudioExtension int AudioRecordInput= 1 0 0 1 // Record mixer inputs to a file (boolean)
+Source:AudioExtension string AudioRecordOutput= % // Record mixer outputs to a file (boolean)
+Source:AudioExtension matrix AudioMixer= 1 2 0 0 // Expressions mix column output from row input
+Source:AudioExtension int AudioRecordingFormat= 0 0 0 2 // Change compression settings on audio output files:    0: Raw, 1: Lossless, 2: Lossy, (enumeration)
+Source:AudioExtension matrix AudioInputFilterbank= 0 { Type Order Cutoff1 Cutoff2 } // Filterbank for audio input
+Source:AudioExtension matrix AudioOutputFilterbank= 0 { Type Order Cutoff1 Cutoff2 } // Filterbank for audio output
+Source:AudioExtension float AudioEnvelopeSmoothing= 20Hz 20Hz 0Hz 22000Hz // Low pass cutoff frequency for envelope
