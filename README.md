@@ -60,27 +60,34 @@ Review and modify parameters in each parameter file.
 Launch XLDataExportSrv.exe (Natus SDK)
 Excute the batch file (run it through BCI2000 watchdog if monitoring is requrired)
 ```text
-1. Setup parameter file
-   └─ Configure startup and synchronization settings
+1. Set up parameter files
+   ├─ Configure camera parameters
+   ├─ Configure microphone parameters
+   └─ Set sampling frequency, data block size, and participant ID
 
-2. Setup batch files
-   └─ Initializes the BCI2000 environment and resets the system.
-   └─ Starts Natus neural data streaming with audio and webcam support.
-   └─ Starts Natus neural data streaming with audio and webcam support.
-   └─ Registers custom events for EMA sessions, questionnaires, and behavioral tracking.
+2. Set up batch files
+   ├─ Load predefined parameter files for neural, audio, video, and subject-specific settings
+   └─ Register custom events for EMA sessions, questionnaires, and behavioral tracking
 
+3. Prepare cameras and microphones
 
-3. Prepare neural hardware (Natus)
-   ├─ Start Natus system
-   ├─ Verify data streaming
-   └─ Confirm channel configuration
+4. Prepare neural hardware (Natus)
+   ├─ Start the EEG study on the Natus PC
+   ├─ Connect the recording PC to the Natus PC via Ethernet
+   ├─ Configure IP settings on the Natus PC
+   └─ Start the XLDataExport client
 
-4. Start acquisition
-   ├─ Launch batch file
-   └─ Launch via Watchdog
+5. Install and open the EMA app on the iPad
 
-5. Run Python script
+6. Start acquisition
+   ├─ Launch the batch file
+   └─ Or launch via the Watchdog
+
+7. Run the Python script
    └─ Schedule and manage EMA sessions
+
+8. Begin monitoring
+
 ```
 
 ## Contributors
