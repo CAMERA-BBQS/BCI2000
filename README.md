@@ -1,4 +1,6 @@
 # BCI2000
+Intro:
+Our platform is built on top of BCI2000, a modular real-time system for neural data acquisition and experimental control. In our setup, BCI2000 is used specifically as a synchronization backbone to provide a unified time base across multiple data streams, including (intracranial) neural recordings, video, audio, and a custom Python-based script. We leverage BCI2000’s real-time signal streaming and event-marker infrastructure to ensure precise temporal alignment across modalities, while all task logic and downstream analyses are implemented in custom components outside of BCI2000. For more information, please visit: [BCI2000](https://www.bci2000.org)
 
 This repository contains example batch files used to initialize and configure the BCI2000 program, with parameter files customized for CAMERA project.
 
