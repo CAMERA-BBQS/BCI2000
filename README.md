@@ -51,14 +51,6 @@ The purpose of the Watchdog is to ensure reliable long-duration recordings. Duri
 For more information, please visit [BCI2000 Watchdog](https://www.bci2000.org/mediawiki/index.php/User_Reference:BCI2000Watchdog)
 
 ## Typical Usage/Workflow
-Open the BCI2000 batch file with corresponding parameter files to initialize and configure BCI2000 program.
-
-Parameter files store customized parameters, including subject name, save location, file splitting length, microphone and camrera settings, etc. Alternatively, parameters can also be modified and configured via the BCI2000 GUI. Modify parameters as needed.
-
-Setup Steps:
-Review and modify parameters in each parameter file.
-Launch XLDataExportSrv.exe (Natus SDK)
-Excute the batch file (run it through BCI2000 watchdog if monitoring is requrired)
 ```text
 1. Set up parameter files
    ├─ Configure camera parameters
@@ -97,3 +89,14 @@ Francis Li\
 James Swift\
 Peter Brunner\
 Jürgen Mellinger
+
+
+## comments:
+Open the BCI2000 batch file with corresponding parameter files to initialize and configure BCI2000 program.
+
+Parameter files store customized parameters, including subject name, save location, file splitting length, microphone and camrera settings, etc. Alternatively, parameters can also be modified and configured via the BCI2000 GUI. Modify parameters as needed.
+
+Setup Steps:
+Review and modify parameters in each parameter file.
+Launch XLDataExportSrv.exe (Natus SDK)
+Excute the batch file (run it through BCI2000 watchdog if monitoring is requrired)
