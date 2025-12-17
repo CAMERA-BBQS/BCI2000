@@ -59,6 +59,7 @@ For more information, please visit [BCI2000 Watchdog](https://www.bci2000.org/me
 
 2. Set up batch files
    ├─ Load predefined parameter files for neural, audio, video, and subject-specific settings
+   ├─  Register IP address
    └─ Register custom events for EMA sessions, questionnaires, and behavioral tracking
 
 3. Prepare cameras and microphones
