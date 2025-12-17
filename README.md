@@ -62,24 +62,7 @@ Excute the batch file (run it through BCI2000 watchdog if monitoring is requrire
 
 ```mermaid
 flowchart TD
-    A[Overview] --> B[Requirements]
-    B --> C[Installation]
-    C --> D[System Components]
-    D --> E[Startup & Configuration]
-
-    E --> F[Batch file]
-    E --> G[Parameter files]
-
-    F --> H[Data Sources]
-    G --> H
-
-    H --> I[Audio / Video (USB devices)]
-    H --> J[Neural Data (Natus – detailed)]
-
-    I --> K[Typical Workflow]
-    J --> K
-
-    K --> L[Outputs]
+    A --> B
 
 
 
