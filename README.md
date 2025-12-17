@@ -63,7 +63,7 @@ Excute the batch file (run it through BCI2000 watchdog if monitoring is requrire
 ```mermaid
 flowchart TD
     A --> B
-'''
+```
 
 
 ## Contributors
