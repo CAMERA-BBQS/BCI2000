@@ -3,6 +3,7 @@
 ## Installation
 BCI2000:
 
+Natus SDK: https://www.bci2000.org/mediawiki/index.php/Contributions:NatusADC
 
 ## Usage
 The batch file is used to initialize and configure BCI2000 program.
