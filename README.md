@@ -62,12 +62,12 @@ Excute the batch file (run it through BCI2000 watchdog if monitoring is requrire
 
 ```mermaid
 flowchart TD
-    A[Setup batch file] --> A1[Configure startup and synchronization settings]
+    A[Setup batch file] --> A1[Configure startup and sync settings]
 
     A1 --> B[Setup parameter files]
-    B --> B1[Configure data streams and recording options]
+    B --> B1[Configure streams and recording options]
 
-    B1 --> C[Prepare neural hardware (Natus)]
+    B1 --> C[Prepare neural hardware - Natus]
     C --> C1[Start Natus system]
     C --> C2[Verify data streaming]
     C --> C3[Confirm channel configuration]
@@ -76,8 +76,8 @@ flowchart TD
     C2 --> D
     C3 --> D
 
-    D --> E[Launch via batch file]
-    D --> F[Launch via Watchdog]
+    D --> E[Launch using batch file]
+    D --> F[Launch using Watchdog]
 
     E --> G[Run Python script]
     F --> G
