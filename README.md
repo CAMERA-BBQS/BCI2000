@@ -69,14 +69,16 @@ For more information, please visit [BCI2000 Watchdog](https://www.bci2000.org/me
    ├─ Configure IP settings on the Natus PC
    └─ Start the XLDataExport client
 
-5. Install and open the EMA app on the iPad
+5. Prepare IPad
+   ├─ Connect to same wi-fi as recording PC
+   └─ Download and Open EMA app
 
-6. Start acquisition
+6. Run the Python script
+   └─ Schedule and manage EMA sessions
+
+7. Start acquisition
    ├─ Launch the batch file
    └─ Or launch via the Watchdog
-
-7. Run the Python script
-   └─ Schedule and manage EMA sessions
 
 8. Begin monitoring
 
